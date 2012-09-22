@@ -1,0 +1,19 @@
+<Alloy>
+    <Window class="container">
+        <View id="header">
+            <ImageView id="logo" />
+        </View>
+        <View id="content">
+            <View id="logincnt">
+                <View id="userpass">
+                    <TextField id="user" hintText="Your username" />
+                    <TextField id="pass" hintText="Your password" passwordMask="true" />
+                </View>
+                
+                <ImageView id="login" />
+                
+                <Label id="signupLabel" class="link">You don't have an account? Sign up!</Label>
+            </View>
+        </View>
+    </Window>
+</Alloy>

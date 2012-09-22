@@ -1,0 +1,10 @@
+<Alloy>
+    <Window class="container" id="MapWindow">
+        <View ns="Ti.Map" id="friends_positions" />
+        <View id="buttons">
+            <ImageView id="minilogo" />
+            <ImageView class="button" id="setup"></Button>
+            <ImageView class="button" id="logout"></Button>
+        </View>
+    </Window>
+</Alloy>

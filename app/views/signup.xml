@@ -1,0 +1,19 @@
+<Alloy>
+    <Window class="container" id="SignupWindow">
+        <View id="header">
+            <ImageView id="logo" />
+            <ImageView class="button" id="back" />
+        </View>
+        <View id="content">
+            <View id="signupcnt">
+                <TextField id="user" hintText="Choose username" />
+                <View id="passconfirm">
+                    <TextField id="pass" hintText="Choose password" passwordMask="true" />
+                    <TextField id="confirm" hintText="Confirm password" passwordMask="true" />
+                </View>
+                
+                <ImageView id="signup" />
+            </View>
+        </View>
+    </Window>
+</Alloy>

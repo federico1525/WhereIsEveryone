@@ -1,0 +1,26 @@
+".container": {
+    backgroundColor:"#ddd",
+    layout: 'vertical'
+},
+"#logincnt": {
+    layout: 'vertical',
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    left: 0,
+    top: 0
+},
+"#userpass": {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE
+},
+"#login": {
+    top: 10,
+    image: '/login.png',
+    width: 116,
+    height: 36
+},
+"Label": {
+    top: 10,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}

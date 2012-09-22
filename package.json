@@ -1,0 +1,42 @@
+{
+  "name": "WhereIsEveryone",
+  "version": "1.1.0",
+  "description": "Where is everyone? Find your friends easily, by looking at their position on the map, no matter where their position come from!",
+  "keywords":
+  [
+    "social",
+    "network",
+    "socialnetwork",
+    "map",
+    "maps",
+    "friend",
+    "friends",
+    "find"
+  ],
+  "author": "Davide Cassenti",
+  "maintainers":
+  [
+  ],
+  "contributors":
+  [
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": ""
+  },
+  "preferGlobal": false,
+  "dependencies":
+  {
+  },
+  "license":"",
+  "private": true,
+  "main": "./WhereIsEveryone.js",
+  "service":
+  {
+    "appid": "",
+    "-consumerKey": "",
+    "-consumerSecret": ""
+  },
+  "logfile" : "WhereIsEveryone.log"
+}

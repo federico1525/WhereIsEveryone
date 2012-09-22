@@ -1,0 +1,36 @@
+".container": {
+    backgroundColor:"#fff",
+    layout: 'vertical'
+},
+"#setupcnt": {
+    layout: 'horizontal',
+    height: 48,
+    top: 0,
+    left: 0
+},
+"#setupinfo": {
+    layout: 'vertical'
+},
+"#info": {
+    top: 0,
+    height: 24,
+    color: '#666',
+    font: {
+        fontSize: 12
+    }
+},
+".button": {
+    top: 0,
+    width: 48,
+    height: 48
+},
+"#foursquare": {
+    image: '/foursquare.png'
+},
+"#facebook": {
+    image: '/facebook.png'
+},
+"#authorize": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL
+}

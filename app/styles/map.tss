@@ -1,0 +1,38 @@
+".container": {
+	backgroundColor: "white"
+},
+"#friends_positions": {
+    top: 0,
+    bottom: 120,
+    left: 0,
+    right: 0
+},
+"#buttons": {
+    height: 120,
+    width: Ti.UI.FILL,
+    left: 0,
+    bottom: 0,
+    layout: 'horizontal',
+    backgroundColor: '#2e3236'
+},
+"#minilogo": {
+    width: 120,
+    height: 75,
+    image: '/logo.png',
+    top: 22
+},
+".button": {
+    top: 28,
+    left: 10,
+    width: 64,
+    height: 64,
+    borderWidth: 0,
+    backgroundColor: 'transparent'
+},
+"#setup": {
+    image: '/settings.png',
+    left: 45
+},
+"#logout": {
+    image: '/logout.png'
+}

@@ -1,0 +1,16 @@
+<Alloy>
+    <Window class="container" id="SetupWindow">
+        <View id="header">
+            <ImageView id="logo" />
+            <ImageView class="button" id="back" />
+        </View>
+        <View id="setupcnt">
+            <ImageView class="button" id="foursquare"/>
+            <ImageView class="button" id="facebook" />
+        </View>
+        <View id="setupinfo">
+            <Label id="info">Click on the social network icon above to connect!</Label>
+            <WebView id="authorize" />
+        </View>
+    </Window>
+</Alloy>
