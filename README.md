@@ -1,4 +1,5 @@
-### Where is Everyone
+Where is Everyone
+=================
 
 "Where is everyone?" helps you to find your friends, by seeing them on a map. The app retrieves your friends position from all the social networks you have connected, and merges them in a single view.
 
