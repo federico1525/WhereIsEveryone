@@ -1,0 +1,20 @@
+{
+    "acs": {
+        "key": "",
+        "secret": ""
+    },
+    "active": [
+        "foursquare",
+        "facebook"
+    ],
+    "foursquare": {
+        "client_id": "",
+        "client_secret": "",
+        "auth_url": "https://foursquare.com/oauth2/access_token"
+    },
+    "facebook": {
+        "client_id": "",
+        "client_secret": "",
+        "auth_url": "https://graph.facebook.com/oauth/access_token"
+    }
+}

@@ -8,8 +8,6 @@ Icon?
 ehthumbs.db
 Thumbs.db
 .project
-app/config.json
-config.json
 .settings
 logs/*
 build.log

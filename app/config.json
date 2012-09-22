@@ -1,0 +1,15 @@
+{
+	"global": {
+	   "url" : "",
+	   "auth" : {
+	       "foursquare" : "",
+	       "facebook" : ""
+	   }
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:ios": {},
+	"os:android": {},
+	"dependencies": {}
+}
