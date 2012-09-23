@@ -11,5 +11,6 @@ Thumbs.db
 .settings
 logs/*
 build.log
+build
 Resources/alloy
 Resources/*.png
