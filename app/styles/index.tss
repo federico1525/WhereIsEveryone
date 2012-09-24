@@ -17,8 +17,8 @@
 "#login": {
     top: 10,
     image: '/login.png',
-    width: 116,
-    height: 36
+    width: 120,
+    height: 52
 },
 "Label": {
     top: 10,
