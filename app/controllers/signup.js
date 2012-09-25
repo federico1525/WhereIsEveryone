@@ -1,3 +1,6 @@
+var args = arguments[0] || {};
+var modal = args.modal || null;
+
 (function() {
     function updateScreen(e) {
         var elIndex = $.SignupWindow;
@@ -43,16 +46,24 @@
     function doSignup() {
         var xhr = Ti.Network.createHTTPClient({
             onload : function(e) {
-                var response = JSON.parse(this.responseText);
-                alert('Account created! You can now login!');
+                var message = 'Account created! You can now login!';
+                if(modal)
+                    modal.alert(message);
+                else
+                    alert(message);
                 $.SignupWindow.close();
             },
             onerror : function(e) {
                 var response = JSON.parse(this.responseText);
                 
-                if(response && response.message) {
-                    alert(response.message);
-                }
+                var message = "Oops! Something went wrong!";
+                if(response && response.message)
+                    message = response.message;
+                
+                if(modal)
+                    modal.alert(message);
+                else
+                    alert(message)
             },
             timeout : 5000  // in milliseconds
         });

@@ -10,10 +10,13 @@
                     <TextField id="pass" hintText="Your password" passwordMask="true" />
                 </View>
                 
-                <ImageView id="login" />
+                <ImageView id="login">
+                    <Label class="greenBtnLabel">Login</Label>
+                </ImageView>
                 
                 <Label id="signupLabel" class="link">You don't have an account? Sign up!</Label>
             </View>
         </View>
     </Window>
+    <Require type="widget" src="com.appcelerator.davidecassenti.modalwindow" id="modal" />
 </Alloy>

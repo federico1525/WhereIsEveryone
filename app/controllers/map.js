@@ -1,3 +1,6 @@
+var args = arguments[0] || {};
+var modal = args.modal || null;
+
 (function(){
     function updateScreen(e) {
         var elMap = $.friends_positions;
@@ -64,7 +67,12 @@
             // function called when an error occurs, including a timeout
             onerror : function(e) {
                 Ti.API.debug(e.error);
-                alert('Oops! There was a problem retrieving the positions! Try again in a few!');
+                var message = "Oops! Can't retrieve positions! Retry in a few!";
+                
+                if(modal)
+                    modal.alert(message);
+                else
+                    alert(message);
             },
             timeout : 30000  // in milliseconds
         });
@@ -80,22 +88,26 @@
     }
     
     function logout() {
-        var xhr = Ti.Network.createHTTPClient({
-            onload : function(e) {
-                $.MapWindow.close();
-            },
-            onerror : function(e) {
-                var response = JSON.parse(this.responseText);
-                
-                if(response && response.message) {
-                    alert(response.message);
-                }
-            },
-            timeout : 5000  // in milliseconds
+        if(!modal) {
+            Ti.API.error("Something is wrong, modal window not defined!!!");
+            $.MapWindow.close();
+            return;
+        }
+        modal.confirm("Are you sure you want to logout?", function() {
+            var xhr = Ti.Network.createHTTPClient({
+                onload : function(e) {
+                    $.MapWindow.close();
+                },
+                onerror : function(e) {
+                    Ti.API.error("Something went wrong during logout!");
+                    $.MapWindow.close();
+                },
+                timeout : 5000  // in milliseconds
+            });
+            // Prepare the connection.
+            xhr.open("GET", Alloy.CFG.url + "/logout");
+            xhr.send();
         });
-        // Prepare the connection.
-        xhr.open("GET", Alloy.CFG.url + "/logout");
-        xhr.send();
     }
     
     $.logout.addEventListener('click', logout);

@@ -12,7 +12,9 @@
                     <TextField id="confirm" hintText="Confirm password" passwordMask="true" />
                 </View>
                 
-                <ImageView id="signup" />
+                <ImageView id="signup">
+                    <Label class="redBtnLabel">Signup</Label>
+                </ImageView>
             </View>
         </View>
     </Window>

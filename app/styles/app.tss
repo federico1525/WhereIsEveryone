@@ -39,4 +39,16 @@
 },
 ".link": {
     color: '#112288'
+},
+".greenBtnLabel": {
+    font: {
+        fontFamily: "Courgette",
+        fontSize: 20
+    }
+},
+".redBtnLabel": {
+    font: {
+        fontFamily: "Courgette",
+        fontSize: 20
+    }
 }

@@ -36,19 +36,24 @@
     
     function doLogin() {
         Ti.API.log('Doing login...');
+        
         var xhr = Ti.Network.createHTTPClient({
             onload : function(e) {
                 var response = JSON.parse(this.responseText);
-                var mapWin = Alloy.createController('map').getView('MapWindow');
+                var args = {
+                    modal: $.modal
+                }
+                var mapWin = Alloy.createController('map', args).getView('MapWindow');
                 mapWin.open();
             },
             onerror : function(e) {
                 var response = JSON.parse(this.responseText);
                 
                 if(response && response.message) {
-                    alert(response.message);
+                    $.modal.alert(response.message);
                 } else {
-                    alert("Oops! Something went wrong!");
+                    $.modal.alert("Oops! Something went wrong!");
+                    Ti.API.error(this.responseText);
                 }
             },
             timeout : 30000  // in milliseconds
@@ -63,7 +68,11 @@
     }
     
     function openSignup() {
-        var signupWin = Alloy.createController('signup').getView('SignupWindow');
+        var args = {
+            modal: $.modal
+        };
+        
+        var signupWin = Alloy.createController('signup', args).getView('SignupWindow');
         signupWin.open();
     }
     
@@ -78,4 +87,36 @@
     
     $.index.open();
     $.user.focus();
+    
+    $.modal.configure({
+        modal: {
+            border: "transparent"
+        },
+        font: {
+            button: {
+                family: "Courgette",
+                size: 20
+            },
+            message: {
+                family: "Courgette",
+                size: 14
+            },
+            title: {
+                family: "Courgette",
+                size: 16
+            }
+        },
+        header: {
+            background: "#2e3236",
+            color: "white"
+        },
+        colors: {
+            cancel: "black"
+        },
+        images: {
+            ok: "/ok.png",
+            cancel: "/cancel.png",
+            close: "/close.png"
+        }
+    });
 })();

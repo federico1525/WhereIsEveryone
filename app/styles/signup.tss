@@ -14,7 +14,7 @@
 },
 "#signup": {
     top: 10,
-    image: '/signup.png',
-    width: 120,
-    height: 52
+    image: '/cancel.png',
+    width: 180,
+    height: 45
 }

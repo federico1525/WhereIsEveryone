@@ -16,9 +16,13 @@
 },
 "#login": {
     top: 10,
-    image: '/login.png',
-    width: 120,
-    height: 52
+    image: '/ok.png',
+    width: 180,
+    height: 45,
+    font: {
+        fontFamily: "Courgette",
+        fontSize: 20
+    }
 },
 "Label": {
     top: 10,
