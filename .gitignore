@@ -14,3 +14,5 @@ build.log
 build
 Resources/alloy
 Resources/*.png
+
+Resources/com.appcelerator.davidecassenti.modalwindow/close.png
