@@ -5,6 +5,11 @@ Where is Everyone
 
 The app is divided in two parts: server and client. The server part is made using Appcelerator Node.ACS, and is responsible for the connection with external social networks; it provides a set of APIs to signup and login into ACS, connect to the social networks and retrieve the positions of your friends. The client works on mobile phones, and provides a mobile user interface to interact with the server.
 
+## Install required widgets
+The following widgets must be downloaded and installed under `app/widgets` to run the app:
+
+- [ModalWindow](https://github.com/davidecassenti/alloy_widgets/tree/master/com.appcelerator.davidecassenti.modalwindow/docs/README.md])
+
 ## Configure the Server
 To setup the server:
 
