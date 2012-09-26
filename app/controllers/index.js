@@ -83,40 +83,8 @@
     $.pass.addEventListener('return', doLogin);
     $.signupLabel.addEventListener('click', openSignup);
     
-    //updateScreen({orientation: Ti.Gesture.orientation});
-    
+    updateScreen({orientation: Ti.Gesture.orientation});
+        
     $.index.open();
     $.user.focus();
-    
-    $.modal.configure({
-        modal: {
-            border: "transparent"
-        },
-        font: {
-            button: {
-                family: "Courgette",
-                size: 20
-            },
-            message: {
-                family: "Courgette",
-                size: 14
-            },
-            title: {
-                family: "Courgette",
-                size: 16
-            }
-        },
-        header: {
-            background: "#2e3236",
-            color: "white"
-        },
-        colors: {
-            cancel: "black"
-        },
-        images: {
-            ok: "/ok.png",
-            cancel: "/cancel.png",
-            close: "/close.png"
-        }
-    });
 })();

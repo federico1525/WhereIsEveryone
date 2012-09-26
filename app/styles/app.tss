@@ -40,15 +40,36 @@
 ".link": {
     color: '#112288'
 },
-".greenBtnLabel": {
+"#modalwindow_header": {
+    backgroundColor: '#2e3236'
+},
+"#modalwindow_title": {
+    color: 'white',
     font: {
-        fontFamily: "Courgette",
+        fontFamily: 'Courgette',
+        fontSize: 16
+    }
+},
+"#modalwindow_message": {
+    font: {
+        fontFamily: 'Courgette',
+        fontSize: 14
+    }
+},
+".modalwindow-button": {
+    width: 180,
+    height: 45,
+    font: {
+        fontFamily: 'Courgette',
         fontSize: 20
     }
 },
-".redBtnLabel": {
-    font: {
-        fontFamily: "Courgette",
-        fontSize: 20
-    }
+"#modalwindow_button_ok": {
+    backgroundImage: '/ok.png'
+},
+"#modalwindow_button_cancel": {
+    backgroundImage: '/cancel.png'
+},
+"#modalwindow_close": {
+    image: '/close.png'
 }
