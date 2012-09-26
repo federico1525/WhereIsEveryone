@@ -1,3 +1,0 @@
-[submodule "app/widgets/com.appcelerator.davidecassenti.modalwindow"]
-	path = app/widgets/com.appcelerator.davidecassenti.modalwindow
-	url = git@github.com:davidecassenti/com.appcelerator.davidecassenti.modalwindow.git
