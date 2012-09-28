@@ -65,10 +65,12 @@
     }
 },
 "#modalwindow_button_ok": {
-    backgroundImage: '/ok.png'
+    backgroundImage: '/ok.png',
+    color: 'black'
 },
 "#modalwindow_button_cancel": {
-    backgroundImage: '/cancel.png'
+    backgroundImage: '/cancel.png',
+    color: 'black'
 },
 "#modalwindow_close": {
     image: '/close.png'
