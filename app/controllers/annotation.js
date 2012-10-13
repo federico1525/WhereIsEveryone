@@ -1,3 +1,5 @@
+var APP = require('core');
+
 var args = arguments[0] || {};
 $.annotation.title = args.title;
 $.annotation.latitude = args.latitude;
@@ -13,6 +15,19 @@ $.annotation.leftView = Ti.UI.createImageView({
     image: args.picture,
     width: 32,
     height: 32
+});
+
+$.annotation.rightView = Ti.UI.createImageView({
+    image: '/drive.png',
+    width: 32,
+    height: 32
+});
+
+$.annotation.rightView.addEventListener('click', function(e) {
+    APP.NaviBridge.addPOI({
+        lat: args.latitude,
+        lon: args.longitude
+    });
 });
 
 function prettyTime(delta) {

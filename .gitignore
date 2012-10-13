@@ -14,5 +14,7 @@ build.log
 build
 Resources/alloy
 Resources/*.png
-Resources/com.appcelerator.davidecassenti.modalwindow/close.png
+Resources/com.appcelerator.davidecassenti.modalwindow
+Resources/core.js
+Resources/ti.navibridge
 app/widgets/*

@@ -7,6 +7,7 @@
         <View id="setupcnt">
             <ImageView class="button" id="foursquare"/>
             <ImageView class="button" id="facebook" />
+            <ImageView class="button" id="navibridge" />
         </View>
         <View id="setupinfo">
             <Label id="info">Click on the social network icon above to connect!</Label>

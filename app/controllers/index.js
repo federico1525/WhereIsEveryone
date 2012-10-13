@@ -1,3 +1,6 @@
+var APP = require('core');
+APP.init();
+
 (function() {
     function updateScreen(e) {
         var elIndex = $.index;

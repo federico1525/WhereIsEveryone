@@ -66,10 +66,12 @@
 },
 "#modalwindow_button_ok": {
     backgroundImage: '/ok.png',
+    backgroundColor: 'transparent',
     color: 'black'
 },
 "#modalwindow_button_cancel": {
     backgroundImage: '/cancel.png',
+    backgroundColor: 'transparent',
     color: 'black'
 },
 "#modalwindow_close": {

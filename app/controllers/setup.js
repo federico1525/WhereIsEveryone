@@ -1,3 +1,5 @@
+var APP = require('core');
+
 (function() {
     function updateScreen(e) {
         var elIndex = $.SetupWindow;
@@ -57,6 +59,10 @@
     $.facebook.addEventListener('click', function() {
         authorize('facebook');
     });
+    
+    $.navibridge.addEventListener('click', function() {
+        APP.NaviBridge.installNavi();
+    })
     
     $.back.addEventListener('click', function() {
         $.SetupWindow.close();

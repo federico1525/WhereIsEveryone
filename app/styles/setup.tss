@@ -30,6 +30,9 @@
 "#facebook": {
     image: '/facebook.png'
 },
+"#navibridge": {
+    image: '/navibridge.png'
+},
 "#authorize": {
     width: Ti.UI.FILL,
     height: Ti.UI.FILL
